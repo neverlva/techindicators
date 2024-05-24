@@ -140,7 +140,7 @@ def kelt(a,b,c,d,e,f):
         lower = center-e*atr(a,b,c,f)[d-f:]
     if f>=d:
         upper = center[f-d:]+e*atr(a,b,c,f)
-        lower = center[f-d:]+e*atr(a,b,c,f)
+        lower = center[f-d:]-e*atr(a,b,c,f)
     return lower,center,upper
 #
 # Rolling standard deviation
